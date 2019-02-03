@@ -1,1 +1,2 @@
-Mancala-Game-Aritificial-Intelligence
+# Mancala-Game-Aritificial-Intelligence
+Using Artificial Intelligence.
