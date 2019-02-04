@@ -35,25 +35,26 @@ public class Main {
             e.printStackTrace();
         }
 
-        int player_1_Win = 0, player_2_Win = 0, draw = 0;
-        int times = 100;
-        for (int i = 0; i < times; i++) {
-            System.out.println("\n\nGame " + (i + 1) + " Starts.");
-            int winner = startGamePlay(bins, stones, s0, s1);
-            if (winner == 0) {
-                draw++;
-            } else if (winner == 1) {
-                player_1_Win++;
-            } else if (winner == 2) {
-                player_2_Win++;
-            }
-        }
+//        int player_1_Win = 0, player_2_Win = 0, draw = 0;
+//        int times = 100;
+//        for (int i = 0; i < times; i++) {
+//            System.out.println("\n\nGame " + (i + 1) + " Starts.");
+//            int winner = startGamePlay(bins, stones, s0, s1);
+//            if (winner == 0) {
+//                draw++;
+//            } else if (winner == 1) {
+//                player_1_Win++;
+//            } else if (winner == 2) {
+//                player_2_Win++;
+//            }
+//        }
+//
+//        System.out.println("Total games: " + times);
+//        System.out.println("Player 1 wins: " + player_1_Win + " times.");
+//        System.out.println("Player 2 wins: " + player_2_Win + " times.");
+//        System.out.println("Match drawn: " + draw + " times.");
 
-        System.out.println("Total games: " + times);
-        System.out.println("Player 1 wins: " + player_1_Win + " times.");
-        System.out.println("Player 2 wins: " + player_2_Win + " times.");
-        System.out.println("Match drawn: " + draw + " times.");
-
+        startGamePlay(bins, stones, s0, s1);
 //		System.setOut( ps );
     }
 
@@ -69,7 +70,9 @@ public class Main {
         MancalaBoard board = new MancalaBoard(bins, stones, s0, s1);
 
         System.out.println(board);
+
         int round = 0;
+
         while (!board.isGameOver() && round < nMaxStages) {
             System.out.println("------------" + round + "--------------");
             int currentPlayer = board.currentPlayer();
