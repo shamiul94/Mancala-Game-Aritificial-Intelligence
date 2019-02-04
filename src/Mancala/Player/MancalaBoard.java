@@ -19,6 +19,7 @@ public class MancalaBoard implements MinimaxProblem, Cloneable {
     private MancalaHeuristic[] strategies; // An array with two elements = the two board' strategies.
     private int stonesMoved = 0; // Stones moved on last move.
     private boolean debugMode = false;
+    private int lastMovedBin = 0;
 
     private static final int STORAGE = 0;
 
@@ -181,6 +182,7 @@ public class MancalaBoard implements MinimaxProblem, Cloneable {
 
 
     public void move(int bin) {
+        lastMovedBin = bin;
         // Bin should be a bin index for current player that holds one or more stones.
         // Performs the basic MancalaBoard move: removes stones from bin
         // and places around board. IF last stone is placed in empty
@@ -278,7 +280,7 @@ public class MancalaBoard implements MinimaxProblem, Cloneable {
     }
 
     @Override
-    public boolean problemequals(MinimaxProblem o) {
+    public boolean Equals(MinimaxProblem o) {
         if (this == o) return true;
         if (o == null) return false;
         MancalaBoard mancalaBoard = (MancalaBoard) o;
@@ -359,6 +361,14 @@ public class MancalaBoard implements MinimaxProblem, Cloneable {
         } else {
             return Integer.toString(n);
         }
+    }
+
+    public int getLastMovedBin() {
+        return lastMovedBin;
+    }
+
+    public void setLastMovedBin(int lastMovedBin) {
+        this.lastMovedBin = lastMovedBin;
     }
 
 ///======================== Print Utilities ==================================////

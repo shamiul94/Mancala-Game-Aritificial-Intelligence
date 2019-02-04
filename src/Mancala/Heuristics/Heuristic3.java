@@ -5,6 +5,19 @@ import Mancala.Player.MancalaBoard;
 import java.util.Random;
 
 public class Heuristic3 extends MancalaHeuristic {
+
+    public int get_additional_move(MancalaBoard board) {
+        int row;
+        row = board.currentPlayer();
+        int thisBin = selectMove(board);
+        int thisBinStones = board.getBin(row, thisBin);
+        int result = 0;
+
+        if (thisBin == thisBinStones) result = 1;
+
+        return result;
+    }
+
     @Override
     public int getUtilValue(MancalaBoard board) {
         int W1 = new Random().nextInt(MAX_WEIGHT) + 1, W2 = new Random().nextInt(MAX_WEIGHT) + 1;
@@ -17,6 +30,7 @@ public class Heuristic3 extends MancalaHeuristic {
         int stones_in_opponents_storage = board.getStonesInStorage(minPlayer);//board.getPlayersTotalStones( MancalaBoard.otherPlayer( board.currentPlayer() ) );
         int stones_in_my_side = board.getPlayersTotalStones(maxPlayer);
         int stones_in_opponents_side = board.getPlayersTotalStones(minPlayer);
-        return W1 * (stones_in_my_storage - stones_in_opponents_storage) + W2 * (stones_in_my_side - stones_in_opponents_side);
+        int additional_move_earned = 1;
+        return W1 * (stones_in_my_storage - stones_in_opponents_storage) + W2 * (stones_in_my_side - stones_in_opponents_side) + W3 * (additional_move_earned);
     }
 }

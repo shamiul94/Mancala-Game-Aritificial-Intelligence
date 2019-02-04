@@ -16,6 +16,7 @@ public class Heuristic2 extends MancalaHeuristic {
         int stones_in_opponents_storage = board.getStonesInStorage(minPlayer);//board.getPlayersTotalStones( MancalaBoard.otherPlayer( board.currentPlayer() ) );
         int stones_in_my_side = board.getPlayersTotalStones(maxPlayer);
         int stones_in_opponents_side = board.getPlayersTotalStones(minPlayer);
+
         return W1 * (stones_in_my_storage - stones_in_opponents_storage) + W2 * (stones_in_my_side - stones_in_opponents_side);
     }
 } 

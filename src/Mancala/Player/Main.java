@@ -25,8 +25,8 @@ public class Main {
     public static void playLoop() {
         int bins = numBinsOnEachSide;//stdin.readInt( "Specify the number of bins on each side." );
         int stones = numStonesPerBin;//stdin.readInt( "Specify the number of stones initially in each bin." );
-        MancalaHeuristic s0 = selectStrategy(1);
-        MancalaHeuristic s1 = selectStrategy(2);
+        MancalaHeuristic s0 = selectStrategy(4);
+        MancalaHeuristic s1 = selectStrategy(1);
 //		PrintStream ps = System.out;
         try {
             System.setOut(new PrintStream("out.log"));
@@ -39,7 +39,7 @@ public class Main {
         int times = 100;
         for (int i = 0; i < times; i++) {
             System.out.println("\n\nGame " + (i + 1) + " Starts.");
-            MAX_DEPTH += 1;
+            MAX_DEPTH = (MAX_DEPTH  + 1) % 17;
             int winner = startGamePlay(bins, stones, s0, s1);
             if (winner == 0) {
                 draw++;
