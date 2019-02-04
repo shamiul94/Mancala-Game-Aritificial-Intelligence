@@ -34,9 +34,7 @@ public class Minimax {
         for (int i = 0; i < list.size(); ++i) {
             if (list.get(i) != null && list.get(i).problemequals(opt.instance)) return i;
         }
-//		for (MinimaxProblem suc : root.getSuccessors()) {
-//			if (suc != null && suc.problemequals( opt.instance )) return suc;
-//		}
+
         return -1;
     }
 

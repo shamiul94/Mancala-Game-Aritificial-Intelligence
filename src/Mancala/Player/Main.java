@@ -10,7 +10,7 @@ public class Main {
     public static final int numBinsOnEachSide = 6;
     public static final int numStonesPerBin = 4;
     public static final boolean DEBUG = false;
-    public static final int MAX_DEPTH = 15;
+    public static int MAX_DEPTH = 15;
     public static Stdin stdin;
     public static final int nMaxStages = 150;
 
@@ -35,26 +35,27 @@ public class Main {
             e.printStackTrace();
         }
 
-//        int player_1_Win = 0, player_2_Win = 0, draw = 0;
-//        int times = 100;
-//        for (int i = 0; i < times; i++) {
-//            System.out.println("\n\nGame " + (i + 1) + " Starts.");
-//            int winner = startGamePlay(bins, stones, s0, s1);
-//            if (winner == 0) {
-//                draw++;
-//            } else if (winner == 1) {
-//                player_1_Win++;
-//            } else if (winner == 2) {
-//                player_2_Win++;
-//            }
-//        }
-//
-//        System.out.println("Total games: " + times);
-//        System.out.println("Player 1 wins: " + player_1_Win + " times.");
-//        System.out.println("Player 2 wins: " + player_2_Win + " times.");
-//        System.out.println("Match drawn: " + draw + " times.");
+        int player_1_Win = 0, player_2_Win = 0, draw = 0;
+        int times = 100;
+        for (int i = 0; i < times; i++) {
+            System.out.println("\n\nGame " + (i + 1) + " Starts.");
+            MAX_DEPTH += 1;
+            int winner = startGamePlay(bins, stones, s0, s1);
+            if (winner == 0) {
+                draw++;
+            } else if (winner == 1) {
+                player_1_Win++;
+            } else if (winner == 2) {
+                player_2_Win++;
+            }
+        }
 
-        startGamePlay(bins, stones, s0, s1);
+        System.out.println("Total games: " + times);
+        System.out.println("Player 1 wins: " + player_1_Win + " times.");
+        System.out.println("Player 2 wins: " + player_2_Win + " times.");
+        System.out.println("Match drawn: " + draw + " times.");
+
+//        startGamePlay(bins, stones, s0, s1);
 //		System.setOut( ps );
     }
 
