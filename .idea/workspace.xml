@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec0e42e9-81bc-4f4d-bd6e-db586b851dfd" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/err.log" beforeDir="false" afterPath="$PROJECT_DIR$/err.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out.log" beforeDir="false" afterPath="$PROJECT_DIR$/out.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/Minimax/Minimax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/Minimax/Minimax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Algorithms/Minimax/MinimaxProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Algorithms/Minimax/MinimaxProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mancala/Heuristics/Heuristic1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mancala/Heuristics/Heuristic1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mancala/Heuristics/Heuristic2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mancala/Heuristics/Heuristic2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mancala/Heuristics/Heuristic3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mancala/Heuristics/Heuristic3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mancala/Heuristics/Heuristic4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mancala/Heuristics/Heuristic4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mancala/Player/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mancala/Player/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mancala/Player/MancalaBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mancala/Player/MancalaBoard.java" afterDir="false" />
-    </list>
+    <list default="true" id="ec0e42e9-81bc-4f4d-bd6e-db586b851dfd" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,8 +45,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Mancala/Player/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+            <state relative-caret-position="245">
+              <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2102#2103#0" expanded="true" />
@@ -322,12 +310,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549186934360</updated>
-      <workItem from="1549186939354" duration="20603000" />
+      <workItem from="1549186939354" duration="20632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20603000" />
+    <option name="totallyTimeSpent" value="20632000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
@@ -515,8 +503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Mancala/Player/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+        <state relative-caret-position="245">
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2102#2103#0" expanded="true" />
